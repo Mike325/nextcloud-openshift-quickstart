@@ -4,7 +4,7 @@
 rm -fr .git
 
 # Creating app
-rhc app create nextcloud php-5.4 mysql-5.5 cron-1.4
+rhc app create nextcloud php-5.4 mysql-5.5 cron-1.4 -s
 
 rm nextcloud/index.php
 # Coping data to app
