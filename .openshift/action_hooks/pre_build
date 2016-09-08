@@ -4,6 +4,9 @@ echo "Starting pre_build..."
 
 config_file=$OPENSHIFT_DATA_DIR${OPENSHIFT_APP_NAME}-config.php
 
+echo "dir $OPENSHIFT_DATA_DIR${OPENSHIFT_APP_NAME}"
+echo "File $config_file"
+
 # Confirm configuration exists, if so restore it
 if [ -f $config_file ]
 then
