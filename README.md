@@ -5,7 +5,7 @@ Nextcloud is a flexible, open source file sync and share solution. Whether using
 
 Think of Nextcloud as a way to roll your own Google Drive or Dropbox on-premise solution.
 
-More information can be found at http://nextcloud.org/
+More information can be found at https://nextcloud.com/
 
 Running on OpenShift
 --------------------
@@ -40,7 +40,7 @@ Default Credentials
 The default user is 'admin' and the password should be printed out to console
 after deployment. Please change the default password after first login.
 
-To download clients that will sync your Nextcloud instance with desktop clients, visit http://nextcloud.org/sync-clients/
+To download clients that will sync your Nextcloud instance with desktop clients, visit http://nextcloud.com/sync-clients/
 
 To give your new Nextcloud site a web address of its own, add your desired alias:
 
