@@ -42,10 +42,7 @@ fi
 popd
 
 echo "Updating DNS name"
-ls --color ${OPENSHIFT_DATA_DIR}current/config/
-ls --color ${OPENSHIFT_DATA_DIR}current/
 #sed -i.bak "s/\([a-zA-Z.-]\)\{1,10\}.rhcloud.com/$OPENSHIFT_APP_DNS/g" $OPENSHIFT_DATA_DIR/current/config/config.php
-sed -i "s/rhcloud.com'/rhcloud.com',/g" ${OPENSHIFT_DATA_DIR}current/config/config.php
-sed -i "/rhcloud.com',/a \t1 => '$OPENSHIFT_APP_DNS'" ${OPENSHIFT_DATA_DIR}current/config/config.php
+sed -i "/rhcloud.com',/a \t1 => '$OPENSHIFT_APP_DNS'," ${OPENSHIFT_DATA_DIR}${OPENSHIFT_APP_NAME}-config.php
 
 echo "Completed post_deploy."
