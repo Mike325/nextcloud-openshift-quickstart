@@ -19,9 +19,8 @@ rm -rf nextcloud/.openshift
 
 # Coping data to app
 echo "  ---> Copying base service"
-mkdir -p nextcloud/.openshift && mkdir -p nextcloud/php
-mv .openshift nextcloud/.openshift
-mv php nextcloud/php
+mv .openshift nextcloud/
+mv php nextcloud/
 
 echo "  ---> Deploying nextcloud to openshift"
 cd nextcloud
