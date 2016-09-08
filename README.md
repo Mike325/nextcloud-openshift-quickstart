@@ -23,7 +23,7 @@ or with PostgreSQL cartridge:
 Add this upstream Nextcloud quickstart repo
 
 	cd nextcloud
-	git remote add upstream -m master git://github.com/mike325/owncloud-openshift-quickstart.git
+	git remote add upstream -m master git://github.com/mike325/nextcloud-openshift-quickstart.git
 	git pull -s recursive -X theirs upstream master
 
 Push back to your OpenShift repo
