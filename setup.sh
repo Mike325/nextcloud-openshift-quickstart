@@ -8,8 +8,10 @@ rm -fr .git
 echo "  ---> Creating nexcloud instance"
 rhc app create nextcloud php-5.4 mysql-5.5 cron-1.4 -s
 
-echo "  ---> Getting repo"
-rhc git-clone nextcloud
+if [[ ! -d nextcloud ]]; then
+    echo "  ---> Getting repo"
+    rhc git-clone nextcloud
+fi
 
 echo "  ---> Removing default php configurations"
 rm nextcloud/index.php
